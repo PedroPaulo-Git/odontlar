@@ -9,7 +9,7 @@ const galleryImages = [
 
 export default function Gallery() {
   return (
-    <section className="py-20 bg-peach flex items-center justify-center px-4 border-y-2 border-sand/30 relative overflow-hidden" id="galeria">
+    <section className="py-20 bg-peach flex items-center justify-center px-4 relative overflow-hidden" id="galeria">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl items-center">
         {/* Coluna texto */}
         <div className="flex flex-col items-start gap-6 text-left">

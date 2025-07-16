@@ -9,13 +9,13 @@ const specialists = [
   {
     name: "Drª. Brenda Maia",
     bio: "A Odont’lar surgiu do desejo de duas profissionais que se uniram para ofertar o melhor em odontologia domiciliar. Uma delas é @drabrendamaia, especialista em Ortodontia, Implantes e Odontologia Hospitalar. Mas ela é bem mais que isso. Inclusive, você sabia que ela é forrozeira de carteirinha? Venha conhecer um pouco mais da profissional que está pronta para cuidar do seu sorriso no conforto da sua casa!",
-    image: "/brenda.jpg",
+    image: "/Sp1.jpg",
     icons: [<Medal key="implante" size={26} />, <Smile key="ortodontia" size={26} />, <HeartPulse key="hospitalar" size={26} />],
   },
   {
     name: "Drª. Renata Lindoso",
     bio: "Hoje vamos conhecer a outra idealizadora da Odont’lar, a @dra.renatalindoso, especialista em Odontologia hospitalar, com mais de 16 anos de vivência com PNE - Paciente com Necessidades Especiais e uma viajante de carteirinha. O destino que ela mais amou visitar a gente não sabe, mas sabemos que amar mesmo ela ama pets e odontologia. 😊 🐶🦷",
-    image: "/renata.jpg",
+    image: "/Sp2.jpg",
     icons: [<HeartPulse key="hospitalar" size={26} />, <PawPrint key="pets" size={26} />],
   },
 ];
@@ -27,8 +27,8 @@ export default function Specialists() {
   const spec = specialists[index];
 
   return (
-    <section id="especialistas" className="py-20  flex items-center justify-center px-4 border-y-2 border-taupe/30 relative overflow-hidden">
-      <div className="max-w-4xl w-full mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+    <section id="especialistas" className=" flex items-center justify-center px-4  relative overflow-hidden">
+      <div className="w-full  flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16">
         {/* Imagem grande */}
         <div className="flex-1 flex justify-center">
           <AnimatePresence mode="wait">
@@ -40,13 +40,12 @@ export default function Specialists() {
               transition={{ duration: 0.5, type: "spring" }}
               className="w-full flex justify-center"
             >
-              <Image
+              <img
                 src={spec.image}
                 alt={spec.name}
-                width={320}
-                height={320}
-                className="rounded-2xl object-cover border-4 border-sage shadow-2xl max-w-xs md:max-w-sm w-full h-auto"
-                priority
+        
+                className=" object-cover  w-full h-full"
+     
               />
             </motion.div>
           </AnimatePresence>

@@ -2,7 +2,7 @@ import { Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-20 bg-sage/30 flex items-center justify-center px-4 border-y-2 border-taupe/30 relative overflow-hidden">
+    <section id="contato" className="py-20 bg-sage/30 flex items-center justify-center px-4  relative overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl items-center">
         {/* Coluna texto */}
         <div className="flex flex-col items-start gap-6 text-left">

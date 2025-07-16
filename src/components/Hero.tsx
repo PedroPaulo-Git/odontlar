@@ -8,9 +8,9 @@ export default function Hero() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl items-center">
         {/* Coluna texto */}
         <div className="flex flex-col items-start gap-6 text-left">
-          <motion.span initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="bg-brown/10 rounded-full p-4 shadow mb-2">
+          {/* <motion.span initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="bg-brown/10 rounded-full p-4 shadow mb-2">
             <Home size={44} className="text-brown" />
-          </motion.span>
+          </motion.span> */}
           <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brown drop-shadow-sm">
             Sorrisos cuidados no conforto do seu lar
           </motion.h1>
@@ -32,9 +32,9 @@ export default function Hero() {
         {/* Coluna imagem */}
         <motion.div initial={{ opacity: 0, scale: 0.92 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1, delay: 0.3 }} className="flex justify-center md:justify-end w-full">
           <img
-            src="/hero-image.jpg"
+            src="/hero.jpg"
             alt="Odontologia Profissional em Casa"
-            className="rounded-2xl shadow-2xl border-4 border-peach-light object-cover max-w-xs md:max-w-md w-full h-auto transition-transform duration-300 hover:scale-105"
+            className="object-cover max-w-xs md:max-w-md w-full h-auto transition-transform duration-300 hover:scale-105"
           />
         </motion.div>
       </div>
